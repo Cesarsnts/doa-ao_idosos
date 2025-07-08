@@ -1,0 +1,57 @@
+ Projeto Memória Potiguar ( Requisitos fucionais) 
+1.Cadastro e Gerenciamento de Conteúdos
+O sistema deve permitir o cadastro de textos, vídeos,e imagens relacionados à cultura, história e pontos turísticos do RN.
+
+
+O administrador deve ser capaz de editar, excluir ou atualizar esses conteúdos.
+
+
+2. Classificação e Categorização
+O sistema deve permitir que os conteúdos sejam organizados por categorias, como:
+
+
+História
+
+
+Cultura
+
+
+Turismo
+
+
+Gastronomia
+
+
+Festas e tradições
+
+
+O usuário deve conseguir filtrar ou buscar conteúdos por categoria ou palavra-chave.
+
+
+3. Responsividade e Acessibilidade
+O site deve ser responsivo, ou seja, adaptar-se a diferentes dispositivos (celular, tablet, desktop).
+
+
+Os conteúdos devem seguir práticas de acessibilidade digital (ex: texto alternativo em imagens, contraste adequado, navegação por teclado).
+
+
+ 4. Compartilhamento em Redes Sociais
+O sistema deve permitir que os usuários compartilhem conteúdos nas redes sociais (Facebook, Instagram, WhatsApp, etc.).
+
+
+ 5. Interface para Usuário e Administrador
+Deve haver dois tipos de usuário:
+
+
+Usuário visitante: pode navegar, visualizar conteúdos e compartilhar.
+
+
+Administrador: pode fazer login e gerenciar (adicionar, editar, remover) todos os conteúdos do site.
+
+
+6. Busca Inteligente
+O site deve permitir ao usuário buscar informações através de uma barra de pesquisa inteligente com autocompletar.
+
+
+ 7. Página de Destaques
+O sistema deve apresentar uma página inicial com conteúdos em destaque, como eventos recentes, novas publicações ou locais mais visitados.
