@@ -67,7 +67,7 @@ def register():
 @app.route('/dashboard')
 @login_required
 def dashboard():
-    return f"Bem-vindo, {current_user.email}! Esta é a área logada."
+    return f"Bem-vindo, {current_user.email}!Você está logado."
 
 @app.route('/logout')
 @login_required
@@ -75,6 +75,13 @@ def logout():
     logout_user()
     flash('Logout realizado com sucesso.', 'success')
     return redirect(url_for('login'))
+@app.route('/usuarios')
+@login_required
+def listar_usuarios():
+    conn = get_db_connection()
+    usuarios = conn.execute('SELECT * FROM users').fetchall()
+    conn.close()
+    return render_template('usuarios.html', usuarios=usuarios)
 
 if __name__ == '__main__':
     app.run(debug=True)
