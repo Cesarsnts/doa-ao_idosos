@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="pt-br">
+<head><meta charset="utf-8"><title>Editar Perfil</title></head>
+<body>
+  <h1>Editar Perfil</h1>
+  <form method="post">
+    <label>Usuário:<input type="text" name="username" value="{{ usuario.username }}"></label><br>
+    <button type="submit">Salvar</button>
+  </form>
+  <a href="{{ url_for('perfil') }}">Voltar ao Perfil</a>
+</body>
+</html>
+EOF
