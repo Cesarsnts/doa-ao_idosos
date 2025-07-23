@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+</head>
+<body>
+     <h1>Usuários Cadastrados</h1>
+
+    <a href="{{ url_for('criar_usuario') }}">Criar novo usuário</a>
+    <ul>
+        {% for usuario in usuarios %}
+            <li>
+                {{ usuario['nome'] }}
+                <a href="{{ url_for('editar_usuario', id=usuario['id']) }}">Editar</a>
+                <form action="{{ url_for('excluir_usuario', id=usuario['id']) }}" method="post" style="display:inline;">
+                    <button type="submit" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('index') }}">Voltar ao início</a>
+</body>
+</html>

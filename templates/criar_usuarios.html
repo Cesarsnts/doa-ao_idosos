@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Usuário</title>
+</head>
+<body>
+     <h1>Criar novo usuário</h1>
+
+    <form method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required>
+        <button type="submit">Salvar</button>
+    </form>
+
+    <a href="{{ url_for('listar_usuarios') }}">Voltar à lista de usuários</a>
+</body>
+</html>
