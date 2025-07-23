@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="pt-br">
+<head><meta charset="utf-8"><title>Registrar</title></head>
+<body>
+  <h1>Registrar</h1>
+  <form method="post">
+    <label>Usuário:<input type="text" name="username"></label><br>
+    <label>Senha:<input type="password" name="password"></label><br>
+    <button type="submit">Cadastrar</button>
+  </form>
+  <a href="{{ url_for('login') }}">Voltar ao Login</a>
+</body>
+</html>
+EOF
