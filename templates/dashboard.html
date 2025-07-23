@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="pt-br">
+<head><meta charset="utf-8"><title>Dashboard</title></head>
+<body>
+  <h1>Bem-vindo, {{ user.username }}</h1>
+  <a href="{{ url_for('perfil') }}">Meu Perfil</a>
+  <form action="{{ url_for('logout') }}" method="post"><button type="submit">Logout</button></form>
+</body>
+</html>
+EOF
