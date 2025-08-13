@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>IDOSO SOLIDARO - Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        .header {
+            background-color: #4db6ac; 
+            color: #004d40; 
+            padding: 10px 0;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 77, 64, 0.3);
+        }
+
+        .background {
+            background-image: url('https://i.pinimg.com/736x/5d/eb/bd/5debbdc65b2912ca82a7d677ccae8418.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 120px;
+        }
+
+        .login-container {
+            background-color: #b2dfdb; 
+            width: 300px;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 9px 12px rgba(0, 77, 64, 0.2);
+        }
+
+        .login-container h2 {
+            background-color: #4db6ac;
+            color: #004d40;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 0;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 80%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 2px solid #4db6ac;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #004d40;
+            background-color: #e0f2f1;
+        }
+
+        .login-container input[type="text"]:focus,
+        .login-container input[type="password"]:focus {
+            border-color: #00796b;
+            outline: none;
+            background-color: white;
+        }
+
+        .login-container button {
+            background-color: #4db6ac;
+            color: #004d40;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background-color: #00796b;
+            color: white;
+        }
+
+        .login-container a {
+            color: #004d40;
+            text-decoration: underline;
+        }
+
+        .login-container p {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .login-container .btn-link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        IDOSO SOLIDARIO
+    </div>
+
+    <div class="background">
+        <div class="login-container">
+            <h2>Conecte-se à sua conta</h2>
+            <form>
+                <input type="text" placeholder="Informe seu e-mail" required><br>
+                <input type="password" placeholder="Informe sua senha" required><br>
+                <p>Não possui conta ainda?<br>
+                <a href="cadastro.html">Cadastre-se</a></p>
+                <a href="paginainicial.html" class="btn-link">
+                    <button type="button">Entrar</button>
+                </a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
