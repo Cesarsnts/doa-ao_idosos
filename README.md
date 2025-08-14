@@ -1,12 +1,12 @@
-  instruções para rodar o codigo
+  # instruções para rodar o codigo
   
 1. baixe os arquivos ou clone o repositorio
    
 2. criar ambiente virtual e ativar
      python -m venv venv
-     # Windows
+     ( Windows )
      venv\Scripts\activate
-     # Linux/Mac
+     ( Linux/Mac )
      source venv/bin/activate
    
 3.Instale as dependências do projeto
@@ -21,7 +21,7 @@
 6. acesse o localhost na barra de navegaçãp
      localost:5000
 
-  Dependências
+  # Dependências
 
 Python 3.x
 
