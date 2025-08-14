@@ -1,12 +1,13 @@
   instruções para rodar o codigo
   
 1. baixe os arquivos ou clone o repositorio
-2. criar ambiente virtual e ativar
+3. criar ambiente virtual e ativar
      python -m venv venv
      # Windows
      venv\Scripts\activate
      # Linux/Mac
      source venv/bin/activate
+   
 3.Instale as dependências do projeto
      pip install -r requirements.txt
 4.Inicialize o banco de dados
