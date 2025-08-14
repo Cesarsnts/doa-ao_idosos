@@ -5,6 +5,7 @@ conn = sqlite3.connect('banco.db')
 
 SCHEMA ='schemas.sql'
 #executar instrução de criação de tabelas(s)
+
 with open (SCHEMA) as f:
     conn.executescript(f.read() )
 
