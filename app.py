@@ -23,6 +23,7 @@ def load_user(user_id):
         u = UserMixin()
         u.id = user['id']
         u.username = user['username']
+        u.email = user['email']  
         return u
     return None
 
@@ -33,29 +34,29 @@ def home():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        username = request.form['username']
+        email = request.form['email']
         password = request.form['password']
         conn = get_db_connection()
-        user = conn.execute('SELECT * FROM users WHERE username = ?', (username,)).fetchone()
+        user = conn.execute('SELECT * FROM users WHERE email = ?', (email,)).fetchone()
         conn.close()
         if user and check_password_hash(user['password'], password):
             login_user(load_user(user['id']))
-            return redirect(url_for('dashboard'))
+            return redirect(url_for('perfil'))
         flash('Credenciais inválidas.', 'danger')
     return render_template('login.html')
 
-@app.route('/register', methods=['GET', 'POST'])
+@app.route('/registro', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
-        username = request.form['username']
+        email = request.form['email']
         password = generate_password_hash(request.form['password'])
         conn = get_db_connection()
-        conn.execute('INSERT INTO users (username, password) VALUES (?, ?)', (username, password))
+        conn.execute('INSERT INTO users (email, password) VALUES (?, ?)', (email, password))
         conn.commit()
         conn.close()
         flash('Cadastro realizado com sucesso.', 'success')
         return redirect(url_for('login'))
-    return render_template('register.html')
+    return render_template('registro.html')
 
 @app.route('/dashboard')
 @login_required
